@@ -1,0 +1,24 @@
+<mvc:View controllerName="com.haojia.test.controller.ErrorValidation" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" height="100%">
+	<Page id="messageHandlingPage" title="Error Validation">
+		<content>
+			<VBox class="sapUiSmallMargin" id="formContainer" items="{ path: 'forms>/form/' }">
+				<HBox>
+					<Label text="Title: " labelFor="title"/>
+					<Input value="{forms>title}" id="title"/>
+					<Label text="Content: " labelFor="content" class="sapUiSmallMarginBegin"/>
+					<Input value="{forms>content}" id="content"/>
+				</HBox>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<Button id="messagePopoverBtn" icon="sap-icon://message-popup" type="Emphasized" text="{=${message>/}.length}"
+					visible="{=!!${message>/}.length}" press="handleMessagePopoverPress"/>
+				<ToolbarSpacer/>
+				<Button type="Emphasized" text="Save" press="onSavePress"/>
+				<Button text="Cancel"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

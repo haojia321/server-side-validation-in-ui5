@@ -1,0 +1,67 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.haojia.test.app",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"dependencies": {
+			"minUI5Version": "1.30",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"rootView": "com.haojia.test.view.App",
+		"routing": {
+			"config" : {
+					"routerClass": "sap.m.routing.Router",
+					"viewType" : "XML",
+					"viewPath" : "com.haojia.test.view",
+					"transition": "show",
+					"controlId": "app",
+					"clearTarget" : true,
+					"controlAggregation": "pages"
+			},
+			"routes": [{
+              "pattern": "",
+              "name": "Main",
+              "target": "Main"
+            }, {
+              "pattern": "errorValidation",
+              "name": "ErrorValidation",
+              "target": "ErrorValidation"
+            }],
+            "targets": {
+              "Main": {
+                "viewName": "Main",
+                "viewLevel": 0
+              },
+			  "ErrorValidation": {
+                "viewName": "ErrorValidation",
+                "viewLevel": 1
+              }
+            }
+		}
+	}
+}

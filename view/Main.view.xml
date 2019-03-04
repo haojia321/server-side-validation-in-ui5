@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.haojia.test.controller.Main" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" height="100%">
+	<Link text="Online Content" press="onLinkClick">
+		<customData>
+			<core:CustomData key="viewName" value="OnlineContent"/>
+		</customData>
+	</Link>
+	<Link text="Error Validation" press="onLinkClick">
+		<customData>
+			<core:CustomData key="viewName" value="ErrorValidation"/>
+		</customData>
+	</Link>
+	<Link text="Error Validation2" press="onLinkClick">
+		<customData>
+			<core:CustomData key="viewName" value="ErrorValidation2"/>
+		</customData>
+	</Link>
+</mvc:View>

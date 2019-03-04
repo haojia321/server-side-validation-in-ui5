@@ -1,0 +1,32 @@
+<mvc:View controllerName="com.haojia.test.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core" height="100%">
+	<App id="app">
+		<!--<Page showHeader="false" enableScrolling="false">
+			<VBox class="sapUiMediumMargin">
+				<Title text="Add Domain" titleStyle="H4"/>
+				<MultiInput id="multiInput1" suggestionItems="{ path: '/ProductCollection' }" showValueHelp="true" valueHelpRequest="test" editable="true">
+					<core:Item key="{ProductId}" text="{Name}"/>
+				</MultiInput>
+			</VBox>
+			<VBox class="sapUiMediumMargin">
+				<Toolbar design="Transparent">
+					<Title text="Setup Rules" titleStyle="H4"/>
+					<ToolbarSpacer/>
+					<Button text="Create New Group"/>
+					<Button icon="sap-icon://expand-all"/>
+					<Button icon="sap-icon://employee-lookup"/>
+				</Toolbar>
+				<Panel expandable="true" expanded="true">
+					<headerToolbar>
+						<Toolbar style="Clear">
+							<Title text="Group Name"/>
+							<ToolbarSpacer/>
+							<Button icon="sap-icon://edit"/>
+							<Button icon="sap-icon://sys-cancel"/>
+						</Toolbar>
+					</headerToolbar>
+				</Panel>
+			</VBox>
+		</Page>-->
+	</App>
+</mvc:View>
